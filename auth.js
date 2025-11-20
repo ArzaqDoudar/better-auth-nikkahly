@@ -21,6 +21,7 @@ export const auth = betterAuth({
     "nikkahlyapp://*",
     "exp://192.168.1.20:8081",
     "http://localhost:3005",
+    process.env.APP_URL,
   ],
   database: new Database("./sqlite.db"),
   emailAndPassword: {
