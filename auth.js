@@ -42,6 +42,7 @@ export const auth = betterAuth({
       sendOTP: ({ phoneNumber, code }, request) => {
         // Implement sending OTP code via SMS
         // TODO for
+        console.log("phoneNumber", phoneNumber);
       },
     }),
     organization(),
