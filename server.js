@@ -16,6 +16,9 @@ app.all("/api/auth/*splat", toNodeHandler(auth));
 // or only apply it to routes that don't interact with Better Auth
 
 app.use(express.json());
+app.get("/api/health", (req, res) => {
+  res.status(200).json({ success: true });
+});
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });

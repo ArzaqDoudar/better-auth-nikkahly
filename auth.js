@@ -15,6 +15,8 @@ import {
 import Database from "better-sqlite3";
 
 export const auth = betterAuth({
+  secret: process.env.BETTER_AUTH_SECRET,
+
   trustedOrigins: [
     "nikkahlyapp://*",
     "exp://192.168.1.20:8081",
